@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:qmui_skin_background="?attr/app_skin_common_background">
+
+
+    <com.qmuiteam.qmui.widget.QMUIEmptyView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:background="@color/qmui_config_color_white"
+        app:qmui_skin_background="?attr/app_skin_common_background"
+        android:fitsSystemWindows="true">
+
+
+
+    <com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <ScrollView
+            android:id="@+id/sv_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            android:fitsSystemWindows="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/ll_bk"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <EditText
+                            android:id="@+id/et_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:hint="请输入搜索关键词"
+                            android:textSize="14sp"
+                            android:textColor="@color/qmui_config_color_white"
+                            android:layout_weight="1"
+                            android:background="@drawable/ll_bk"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_search"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_ss"
+                            android:layout_gravity="center"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/ll_bk"
+                    android:layout_marginTop="1dp">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:padding="6dp"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/ll_bk"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   每周放送列表"
+                            android:textSize="14sp"
+                            android:textColor="@color/qmui_config_color_white"
+                            />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        android:background="@drawable/ll_bkx"
+                        >
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            android:background="@drawable/ll_bk"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="fixed"
+
+                            >
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周一"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周二"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周三"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周四"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周五"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周六"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="周日"
+                                android:background="@color/qmui_config_color_white"/>
+
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+                    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:nestedScrollingEnabled="false"
+                            />
+                    </RelativeLayout>
+
+
+
+                    <!--                  <com.google.android.material.appbar.AppBarLayout-->
+                    <!--                     android:layout_width="match_parent"-->
+                    <!--                     android:layout_height="wrap_content"-->
+                    <!--                     android:background="@drawable/ll_bkx"-->
+
+                    <!--                      >-->
+
+                    <!--                      <com.qmuiteam.qmui.widget.tab.QMUITabSegment2-->
+                    <!--                          android:id="@+id/tabSegment"-->
+                    <!--                          android:layout_width="match_parent"-->
+                    <!--                          android:layout_height="40dp"-->
+                    <!--                          android:padding="5dp"-->
+                    <!--                          android:layout_gravity="center_horizontal"-->
+                    <!--                          />-->
+
+                    <!--                  </com.google.android.material.appbar.AppBarLayout>-->
+
+
+                    <!--                    <androidx.viewpager2.widget.ViewPager2-->
+                    <!--                        android:id="@+id/contentViewPager"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="0dp"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:fitsSystemWindows="true" />-->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:visibility="visible"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/ll_bk"
+                    android:layout_marginTop="6dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_xh"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="每日推荐"
+                            android:textColor="@color/qmui_config_color_white"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/qmui_config_color_gray_1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/mrtjgridview"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+
+                                />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/ll_bk"
+                    android:layout_marginTop="6dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_xh"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="最近更新"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/qmui_config_color_white"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/qmui_config_color_gray_1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/zjgxgridview"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout>
+
+    </com.qmuiteam.qmui.widget.QMUIEmptyView>
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"/>
+
+
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

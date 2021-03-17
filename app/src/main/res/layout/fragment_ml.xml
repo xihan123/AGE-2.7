@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:qmui_skin_background="?attr/app_skin_common_background"
+
+    >
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ll_bk"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ll_bk"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="日本"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="中国"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="欧美"
+                                android:background="@color/qmui_config_color_white"/>
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TV"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="剧场版"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OVA"
+                                android:background="@color/qmui_config_color_white"/>
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"                            app:tabMode="scrollable"
+                            >
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="C"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="D"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="E"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="F"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="G"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="H"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="I"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="J"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="K"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="L"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="O"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="P"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Q"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="R"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="S"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="U"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="V"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="W"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="X"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Y"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Z"
+                                android:background="@color/qmui_config_color_white"/>
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2021"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2020"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2019"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2018"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2017"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2016"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2015"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2014"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2013"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2012"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2011"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2010"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2009"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2008"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2007"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2006"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2005"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2004"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2003"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2002"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2001"
+                                android:background="@color/qmui_config_color_white"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2000"
+                                android:background="@color/qmui_config_color_white"/>
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1月"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4月"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7月"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10月"
+                                android:background="@color/qmui_config_color_white"/>
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="连载"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="完结"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未播放"
+                                android:background="@color/qmui_config_color_white"/>
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="搞笑"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="运动"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="励志"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="热血"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="战斗"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="竞技"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="校园"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="青春"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="爱情"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="冒险"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="后宫"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="百合"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="萝莉"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="魔法"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="悬疑"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="推理"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="奇幻"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="科幻"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="游戏"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="神魔"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="恐怖"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="血腥"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="机战"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="战争"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="犯罪"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="历史"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="社会"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="职场"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="剧情"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="伪娘"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="耽美"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="童年"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="教育"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="亲子"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="真人"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="歌舞"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="肉番"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="美少女"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="轻小说"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="吸血鬼"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="女性向"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="泡面番"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="欢乐向"
+                                android:background="@color/qmui_config_color_white"/>
+
+
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BDRIP"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AGERIP"
+                                android:background="@color/qmui_config_color_white"/>
+
+
+
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ll_bk"
+                        >
+
+
+                        <cn.xihan.age.custom.MyTabLayout
+                            android:id="@+id/tab_layout9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabIndicatorColor="@color/qmui_config_color_red"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle2"
+                            app:tabTextColor="@color/qmui_config_color_white"
+                            app:tabMode="scrollable"
+                            >
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="更新时间"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="名称"
+                                android:background="@color/qmui_config_color_white"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="点击量"
+                                android:background="@color/qmui_config_color_white"/>
+
+                        </cn.xihan.age.custom.MyTabLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/ll_bk"
+                        >
+                        <EditText
+                            android:id="@+id/et_mulu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="显示多少行默认15,单次有效"
+                            android:gravity="center"
+                            android:textSize="10dp"
+
+                            android:textColor="@color/qmui_config_color_white"
+                            >
+
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/bt_shaixuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ll_bk"
+                            android:text="筛选"
+                            android:textColor="@color/qmui_config_color_white"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:visibility="visible"
+                        />
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ll_bk"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_xh"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="动漫列表"
+                        android:layout_weight="1"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_zongshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/qmui_config_color_gray_1" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="4dp"
+
+                    >
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:nestedScrollingEnabled="false"
+                            />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

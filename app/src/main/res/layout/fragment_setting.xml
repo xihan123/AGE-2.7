@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout
+    xmlns:settingitem="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qmui_config_color_black"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:fitsSystemWindows="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ll_bk"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                    <!-- 整行的空白 Span，可用来用于制作段间距 -->
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_marginLeft="4dp"
+                        style="@style/QDCommonTitle"
+                        android:textColor="@color/qmui_config_color_white"
+                        android:text="介绍:"/>
+                    <TextView
+                        android:id="@+id/blockSpace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:textColor="?attr/qmui_config_color_gray_5"
+                        android:textSize="16sp"
+                        android:enabled="true"
+                        android:textIsSelectable="true"
+                        android:focusable="true"
+                        android:longClickable="true"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ll_bk"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+
+
+
+                    <cn.xihan.age.custom.SettingItem
+                        android:id="@+id/si_x5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        settingitem:leftText="x5内核"
+                        settingitem:leftTextSize="32px"
+                        settingitem:leftTextColor="@color/qmui_config_color_white"
+                        settingitem:leftTextMarginLeft="6dp"
+                        settingitem:leftIconResId="@drawable/ic_nh"
+                        settingitem:leftIconWidth="32px"
+                        settingitem:leftIconHeight="32px"
+                        settingitem:leftIconMarginLeft="32px"
+                        settingitem:rightTextSize="27px"
+                        settingitem:rightTextColor="@color/qmui_config_color_white"
+                        settingitem:rightTextMarginRight="16dp"
+                        settingitem:rightIconResId="@drawable/ic_right"
+                        settingitem:rightIconWidth="32px"
+                        settingitem:rightIconHeight="32px"
+                        settingitem:rightIconMarginRight="16dp"
+                        />
+                    <cn.xihan.age.custom.SettingItem
+                        android:id="@+id/si_gx"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        settingitem:leftText="检查更新"
+                        settingitem:leftTextSize="32px"
+                        settingitem:leftTextColor="@color/qmui_config_color_white"
+                        settingitem:leftTextMarginLeft="6dp"
+                        settingitem:leftIconResId="@drawable/ic_nh"
+                        settingitem:leftIconWidth="32px"
+                        settingitem:leftIconHeight="32px"
+                        settingitem:leftIconMarginLeft="32px"
+                        settingitem:rightTextSize="27px"
+                        settingitem:rightTextColor="@color/qmui_config_color_white"
+                        settingitem:rightTextMarginRight="16dp"
+                        settingitem:rightIconResId="@drawable/ic_right"
+                        settingitem:rightIconWidth="32px"
+                        settingitem:rightIconHeight="32px"
+                        settingitem:rightIconMarginRight="16dp"
+                        />
+
+                    <!--                <View-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="10dp"/>-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/ll_bk"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_api"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="自定义API"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_api"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="API:"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"
+                        />
+
+
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/qmui_config_color_gray_2"/>
+
+
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_yjz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="开启预加载"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_zdqpbf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="自动全屏播放"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+
+
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/qmui_config_color_gray_2"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_plq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="显示评论区"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_shield"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="评论屏蔽词"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_shieldurl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/qmui_config_color_white"
+                        android:text="自定义屏蔽词链接地址"
+                        android:layout_marginLeft="8dp"
+                        />
+
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/qmui_config_color_gray_2"/>
+
+
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/qmui_config_color_gray_2"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_sc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="本地收藏"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_opendm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="开启弹幕"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sc_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="自定义头像"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/qmui_config_color_white"/>
+                    <TextView
+                        android:id="@+id/tv_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="自定义头像URL(绝对地址)"
+                        android:textColor="@color/qmui_config_color_white"/>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:visibility="invisible"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        />
+
+
+
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

@@ -1,0 +1,8 @@
+rootProject.name = "AGE动漫"
+include ':app'
+include ':skin-maker'
+include ':paylibrary'
+include ':ijkplayer-exo',':ijkplayer-armv7a',':ijkplayer-java'
+
+include ':myDownload'
+include ':BaseAdapter'

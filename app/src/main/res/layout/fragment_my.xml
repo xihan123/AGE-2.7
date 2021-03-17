@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settingitem="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:qmui_skin_background="?attr/app_skin_common_background">
+
+
+
+
+    <ScrollView
+        android:id="@+id/sv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:fitsSystemWindows="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/ll_bk"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_bg"
+                            android:padding="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:scaleType="fitXY"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_tx"
+                        android:layout_width="128dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="-220dp"
+                        android:layout_marginLeft="25dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_yhm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="用户名"
+                        android:textSize="14sp"
+                        android:textColor="@color/qmui_config_color_white"
+                        android:layout_marginLeft="225dp"
+                        android:layout_marginTop="-120dp"/>
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:hint="用户名"
+                        android:textSize="14sp"
+                        android:textColor="@color/qmui_config_color_white"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="-1dp"/>
+
+                    <EditText
+                        android:id="@+id/et_pass"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:hint="密码"
+                        android:textSize="14sp"
+                        android:textColor="@color/qmui_config_color_white"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="-1dp"
+                        android:inputType="textPassword"
+                        />
+
+
+                    <com.qmuiteam.qmui.layout.QMUIButton
+                            android:id="@+id/btn_reg"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:text="注册"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                        android:background="@color/qmui_config_color_gray_1"
+
+                            />
+                    <com.qmuiteam.qmui.layout.QMUIButton
+                        android:id="@+id/btn_log"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:text="登录"
+                        android:layout_marginStart="280dp"
+                        android:layout_marginTop="-40dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:background="@color/qmui_config_color_gray_1"
+
+                        />
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ll_bk"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+
+                <cn.xihan.age.custom.SettingItem
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/settingItemds"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    settingitem:leftText="打赏"
+                    settingitem:leftTextSize="14dp"
+                    settingitem:leftTextColor="@color/qmui_config_color_white"
+                    settingitem:leftTextMarginLeft="6dp"
+                    settingitem:leftIconResId="@drawable/ic_ds"
+                    settingitem:leftIconWidth="18dp"
+                    settingitem:leftIconHeight="18dp"
+                    settingitem:leftIconMarginLeft="10dp"
+                    settingitem:rightTextSize="32px"
+                    settingitem:rightTextColor="@color/qmui_config_color_white"
+                    settingitem:rightTextMarginRight="16dp"
+                    settingitem:rightIconResId="@drawable/ic_right"
+                    settingitem:rightIconWidth="32px"
+                    settingitem:rightIconHeight="32px"
+                    settingitem:rightIconMarginRight="16dp"
+
+
+                    />
+
+                <cn.xihan.age.custom.SettingItem
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/settingItemsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    settingitem:leftText="收藏"
+                    settingitem:leftTextSize="14dp"
+                    settingitem:leftTextColor="@color/qmui_config_color_white"
+                    settingitem:leftTextMarginLeft="6dp"
+                    settingitem:leftIconResId="@drawable/ic_sc2"
+                    settingitem:leftIconWidth="15dp"
+                    settingitem:leftIconHeight="15dp"
+                    settingitem:leftIconMarginLeft="10dp"
+                    settingitem:rightTextSize="32px"
+                    settingitem:rightTextColor="@color/qmui_config_color_white"
+                    settingitem:rightTextMarginRight="16dp"
+                    settingitem:rightIconResId="@drawable/ic_right"
+                    settingitem:rightIconWidth="32px"
+                    settingitem:rightIconHeight="32px"
+                    settingitem:rightIconMarginRight="16dp"
+
+
+                    />
+
+                <cn.xihan.age.custom.SettingItem
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/settingItemsc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    settingitem:leftText="收藏2"
+                    settingitem:leftTextSize="14dp"
+                    settingitem:leftTextColor="@color/qmui_config_color_white"
+                    settingitem:leftTextMarginLeft="6dp"
+                    settingitem:leftIconResId="@drawable/ic_sc2"
+                    settingitem:leftIconWidth="15dp"
+                    settingitem:leftIconHeight="15dp"
+                    settingitem:leftIconMarginLeft="10dp"
+                    settingitem:rightTextSize="32px"
+                    settingitem:rightTextColor="@color/qmui_config_color_white"
+                    settingitem:rightTextMarginRight="16dp"
+                    settingitem:rightIconResId="@drawable/ic_right"
+                    settingitem:rightIconWidth="32px"
+                    settingitem:rightIconHeight="32px"
+                    settingitem:rightIconMarginRight="16dp"
+
+
+                    />
+
+                <cn.xihan.age.custom.SettingItem
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/settingItemsz"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    settingitem:leftText="设置"
+                    settingitem:leftTextSize="14dp"
+                    settingitem:leftTextColor="@color/qmui_config_color_white"
+                    settingitem:leftTextMarginLeft="6dp"
+                    settingitem:leftIconResId="@drawable/ic_sz"
+                    settingitem:leftIconWidth="15dp"
+                    settingitem:leftIconHeight="15dp"
+                    settingitem:leftIconMarginLeft="10dp"
+                    settingitem:rightTextSize="32px"
+                    settingitem:rightTextColor="@color/qmui_config_color_white"
+                    settingitem:rightTextMarginRight="16dp"
+                    settingitem:rightIconResId="@drawable/ic_right"
+                    settingitem:rightIconWidth="32px"
+                    settingitem:rightIconHeight="32px"
+                    settingitem:rightIconMarginRight="16dp"
+
+
+                    />
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/bt_tcdl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ll_bk"
+                    android:layout_marginTop="4dp"
+                    android:text="退出登录"
+                    android:textColor="@color/qmui_config_color_red"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

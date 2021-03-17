@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AGE动漫</string>
+
+
+    <!-- 关于界面 -->
+    <string name="about_title" tools:keep="@string/about_title">关于</string>
+    <string name="about_item_homepage" tools:keep="@string/about_item_homepage">访问官网</string>
+    <string name="about_item_github" tools:keep="@string/about_item_github">GitHub</string>
+    <string name="about_copyright" tools:keep="@string/about_copyright">© %1$s QMUI Team All rights reserved.</string>
+    <string name="common_example" tools:keep="@string/common_example">示例图片</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+</resources>
